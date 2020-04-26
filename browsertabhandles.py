@@ -14,3 +14,8 @@ handles=driver.window_handles    #handles to other window tab
 for handle in handles:
     driver.switch_to_window(handle)
     print(driver.title)
+
+    if driver.title=="Automation Testing - Home | Facebook":
+        driver.close()
+
+driver.quit()
